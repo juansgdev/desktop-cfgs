@@ -1,6 +1,6 @@
 #!/bin/bash
-apt uninstall firefox
-apt install google-chrome xinit xorg feh vim i3 zsh git
+apt remove firefox
+apt install chromium xinit xorg feh vim i3 zsh git
 git config --global user.name "juansgdev"
 git config --global user.email "juangomes.profissional@gmail.com"
 git clone https://github.com/juansgdev/desktop-cfgs.git

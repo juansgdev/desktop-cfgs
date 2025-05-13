@@ -3,7 +3,7 @@ apt remove firefox
 apt install chromium xinit xorg feh vim i3 zsh git
 git config --global user.name "juansgdev"
 git config --global user.email "juangomes.profissional@gmail.com"
-git clone https://github.com/juansgdev/desktop-cfgs.git
+git clone https://github.com/juansgdev/desktop-cfgs.git /home/juan/desktop-cfgs
 mv ~/desktop-cfgs/.xinitrc ~/
 mv ~/desktop-cfgs/.vimrc ~/
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
@@ -15,4 +15,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 vim +PlugInstall +qall
 mv ~/desktop-cfgs/graphical-environment.service /etc/systemd/system/
 systemctl set-default multi-user.target
+systemctl enable graphical-environment.service
 echo Reinicie o sistema agora para aplicar as mudanças!

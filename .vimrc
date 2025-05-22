@@ -13,6 +13,7 @@ set softtabstop=4    " Usa 4 espaços para o preenchimento de tabulação
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 

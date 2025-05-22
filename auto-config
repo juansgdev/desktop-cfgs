@@ -12,6 +12,8 @@ mkdir -p ~/.config/i3/
 mv ~/desktop-cfgs/config ~/.config/i3/
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
+mkdir /home/juan/wallpapers
+mv ~/desktop-cfgs/anime-city.png ~/wallpapers/
 mv ~/desktop-cfgs/graphical-environment.service /etc/systemd/system/
 systemctl set-default multi-user.target
 systemctl enable graphical-environment.service

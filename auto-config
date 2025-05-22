@@ -8,7 +8,6 @@ mv ~/desktop-cfgs/.xinitrc ~/
 mv ~/desktop-cfgs/.vimrc ~/
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 mv ~/desktop-cfgs/.zshrc ~/
-chsh -s /bin/zsh
 mkdir -p ~/.config/i3/
 mv ~/desktop-cfgs/config ~/.config/i3/
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim

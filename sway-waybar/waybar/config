@@ -1,0 +1,35 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "cpu", "memory", "battery"],
+    
+"battery": {
+    "format": "{icon} {capacity}% - {power}W",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": "⚡ {capacity}% - Carregando ({time})",
+    "format-plugged": "🔌 {capacity}% - AC",
+    "format-full": "✓ 100% - Completo",
+    "format-discharging": "{icon} {capacity}% - {time} restante",
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "tooltip": true
+},
+     "network": {
+        "format-wifi": "📶 {essid}",
+        "format-disconnected": "❌"
+    },
+    "cpu": {
+        "format": "💻 {usage}%"
+    },
+    "memory": {
+        "format": "🧠 {}%"
+    },
+    "clock": {
+        "format": "{:%d/%m/%Y %H:%M}"
+    }
+}

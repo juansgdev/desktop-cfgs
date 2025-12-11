@@ -5,15 +5,16 @@ set nowrap
 set cursorline
 set number
 set relativenumber
-set expandtab        " Usa espaços no lugar de tabulações
-set tabstop=4        " Define o tamanho da tabulação
-set shiftwidth=4     " Usa 4 espaços para a indentação
-set softtabstop=4    " Usa 4 espaços para o preenchimento de tabulação
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set virtualedit=onemore
+set noswapfile
 
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 
@@ -59,3 +60,9 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-q> :q<CR>
 nnoremap <C-t> :terminal<CR>
 
+nnoremap <C-Right> <C-w>l
+
+nnoremap <C-Left> <C-w>h
+
+nnoremap <C-Up> <C-w>k
+nnoremap <C-Down> <C-w>j

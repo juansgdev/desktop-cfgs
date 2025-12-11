@@ -1,0 +1,5 @@
+#!/bin/bash
+apt update -y
+apt upgrade -y
+apt remove -y firefox-esr
+apt install -y chromium konsole ark pcmanfm vim flatpak build-essential clangd nodejs pkg-config cmake meson ninja-build curl nmtui bluetoothctl brightnessctl pavu-control xinit i3 sway waybar xwayland wayland-protocols

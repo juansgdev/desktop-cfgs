@@ -1,0 +1,76 @@
+* {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 30, 0.2);
+    color: #e8e8e8;
+}
+
+/* Módulos individuais */
+#workspaces,
+#mode,
+#clock,
+#battery,
+#cpu,
+#memory,
+#network {
+    background-color: #3a3a3a;
+    color: #e8e8e8;
+    padding: 5px 15px;
+    margin: 5px 4px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Workspaces */
+#workspaces button {
+    background-color: transparent;
+    color: #e8e8e8;
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+}
+
+#workspaces button.focused {
+background-color: #e8e8e8;
+color: #2a2a2a;
+}
+
+/* Bateria - cores por status */
+#battery.charging {
+    color: #a8e6cf;
+}
+
+#battery.warning {
+    color: #ffd96a;
+}
+
+#battery.critical {
+    color: #ff6b6b;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Clock destaque */
+#clock {
+    font-weight: bold;
+}
+
+/* Hover nos módulos */
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#clock:hover {
+    background-color: #4a4a4a;
+}
